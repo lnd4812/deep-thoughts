@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz Challenge</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    
+    <header>
+        <title>
+            <h1>Codemaster Quiz</h1>
+        </title>
+        <!--display link to high scores-->
+            <div class="scoresLink">
+                <a id="view-scores" href="/">View High Scores</a>   
+            </div>
+        <div class="timerDisplay">
+            <p>Time Left: <span id="timer"></span></p>
+       </div>
+    </header>
+    <main>
+        <section class="start-container">
+           <!--set up the intro display-->
+           <section class="intro">
+           <h1 class="quiz-title">Coding Quiz Challenge</h1>
+                <br  />
+                <p>Try to answer the following code-related questions within the time limit</p>
+                <p>Keep in mind that incorrect answers will penalize your score/time by ten seconds</p>         
+                <br/>    
+                <div class="start-button">
+                    <button class="btn" id="start" type="button">Start Quiz</button>
+                </div>
+            </section>
+        </section>    
+        <section class="question-section">
+            <div id="quiz-questions">
+                <h1 id="the-question">
+                </h1>
+                <div id="the-choices">
+                </div>
+            </div>
+        </section>
+        <section class="score-container" id="all-done">
+            <h1>All Done!</h1>
+            <p>Your score is: <span id="yourScore"></span></p>
+            <div class="capture-high-score">
+               <input type="text" name="high-scorer" class="text-input" placeholder="Enter your initials" />
+            </div>
+            <div class="scores-input">
+                <button class="btn" id="#inputScore" type="submit">Submit</button>
+            </div>
+        </section>   
+        <section class="score-output" id=#high-scores>
+            <div class="score-display">
+                <input type="text" name="high-scorer" class="text-input" />
+                <div class="score-buttons">
+                    <button class="btn" id="go-back" type="button"><a href="#all-done">Go Back</a></button>
+                    <button class="btn" id="clear-scores" type="button">Clear High Scores</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2022 by lnd4812
+    </footer>
+
+<script src="./assets/js/script.js"></script>
+
+</body>
+</html>
